@@ -1,21 +1,25 @@
 Scanner teclado = new Scanner(System.in);
-		System.out.println("Ingrese su edad:"); 
+		System.out.println("Ingrese un edad:"); 
 		int edad = teclado.nextInt();
 		if (edad >= 18) {
 			System.out.println("Sos mayor de edad. Quiere pasar a la fiesta? si o no");
 			String respuesta = teclado.next();
-			if (respuesta.equalsIgnoreCase("si"))
+			if (respuesta.equalsIgnoreCase("si")) {
 				System.out.println("Adelante podes pasar");
 			    System.out.println("Ingrese su nombre:");
 			String nombre = teclado.next();
-			if (nombre.equalsIgnoreCase("pedro"))
+			if (nombre.equalsIgnoreCase("pedro")) {
 				System.out.println("Hola pedrito podes pasar");
-			System.out.println("Pedrito queres tomar algo? si o no");
+			System.out.println("Pedrito queres tomar algo? si o no"); 
 			String respuesta2 = teclado.next();
 			if (respuesta2.equalsIgnoreCase("si")) {
 				System.out.println("Ya te preparo");
-			}
+				
+			} else System.out.println("ok pedrito no tomes nada");
 			
-		}
+		} else System.out.println("Hola" + nombre );
+	} 	else System.out.println("ok te esperamos en la proxima fiesta");
+		} else System.out.println("Sos menos de edad");
 	}
 }
+	
