@@ -1,1 +1,21 @@
-
+Scanner teclado = new Scanner(System.in);
+		System.out.println("Ingrese su edad:"); 
+		int edad = teclado.nextInt();
+		if (edad >= 18) {
+			System.out.println("Sos mayor de edad. Quiere pasar a la fiesta? si o no");
+			String respuesta = teclado.next();
+			if (respuesta.equalsIgnoreCase("si"))
+				System.out.println("Adelante podes pasar");
+			    System.out.println("Ingrese su nombre:");
+			String nombre = teclado.next();
+			if (nombre.equalsIgnoreCase("pedro"))
+				System.out.println("Hola pedrito podes pasar");
+			System.out.println("Pedrito queres tomar algo? si o no");
+			String respuesta2 = teclado.next();
+			if (respuesta2.equalsIgnoreCase("si")) {
+				System.out.println("Ya te preparo");
+			}
+			
+		}
+	}
+}
